@@ -1,1 +1,41 @@
-h1 {color: red;}
+h1, h2, h3, a {font-family: 'Inter', sans-serif; font-weight: 500; color: #000000; text-transform: lowercase;}
+
+h1 {color: #000000;}
+
+h2 {color: #000000;}
+
+
+h3 {color: #000000; font-size: 40px; padding-top: 8%; margin-bottom: 5px;}
+
+h4, p {font-family: 'Roboto Slab', serif; color: #000000;}
+
+
+hr {width: 250px; height: 3px; background: #701411; border: 0px; margin: 0px auto 40px auto;}
+
+#logo, li, img, .button, video {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
+
+/* HEADER ******************************/
+
+header {
+width: 100%;
+height: 75px;
+position: fixed;
+top: 0;
+left: 0;
+background: #fff;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+z-index: 1;}
+
+
+#logo {width: 100px; float: left; margin: 10px 0 0 10px}
+
+#logo:hover {opacity: 0.5;}
+
+.img-logo {width: 60px;}
+
+
+/* START ******************************/
+
+#start hr {width: 1000px; height: 3px; background: #000000}
+
+#start h1 {}
