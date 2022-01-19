@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mypets</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+    <h1>Welcome to your pets!</h1>
+
+    <h2>please enter the following information about your pet:</h2>
+<form>
+
+    <div class="form__fieldset">
+        <label for="animal" class="form__label"> <h3>Animal:</h3></label>
+        <input type="animal" name="animal" id="animal" class="form__input" />
+    </div>
+
+    <div class="form__fieldset">
+        <label for="name" class="form__label"><h3>Name:</h3></label>
+        <input type="name" name="name" id="name" class="form__input" />
+    </div>
+
+    <div class="form__fieldset">
+        <label for="age" class="form__label"><h3>Age:</h3></label>
+        <input type="age" name="age" id="age" class="form__input" />
+    </div>
+
+     <div class="form__fieldset">
+        <label for="food" class="form__label"><h3>Food:</h3></label>
+        <input type="food" name="food" id="food" class="form__input" />
+    </div>
+
+    <div class="form__fieldset">
+        <label for="medication" class="form__label"><h3>Medication:</h3></label>
+        <input type="medication" name="medication" id="medication" class="form__input" />
+    </div>
+
+    <div class="form__fieldset">
+        <label for="special needs" class="form__label"><h3>Special Needs:</h3></label>
+        <input type="special needs" name="special needs" id="special needs" class="form__input" />
+    </div>
+
+    <div class="form__fieldset">
+        <label for="status" class="form__label"><h3>status</h3></label>
+        <select name="status" id="status" class="form__input form__select">
+            <option value="none"><h3>none</h3></option>
+            <option value="owner"><h3>owner</h3></option>
+            <option value="foster"><h3>foster</h3></option>
+            <option value="sitter"><h3>sitter</h3></option>
+        </select>
+    </div>
+
+    <div class="form__fieldset">
+        <input
+            class="form__submit form__input"
+            type="submit"
+            value="add animal"
+        />
+    </div>
+
+
+</form>
+
+</head>
+<body>
+
+</body>
+</html>
