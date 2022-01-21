@@ -1,9 +1,16 @@
-h1, h2, h3, a {font-family: 'Inter', sans-serif; font-weight: 500; color: #000000; text-transform: lowercase;}
+html, body {margin: 0px; padding: 0px; height: 100%; text-align: left;}
 
-h1 {color: #000000;}
+section {min-height: 100%;}
 
-h2 {color: #000000;}
+a {text-decoration: none;}
 
+li {list-style-type: none;}
+
+h1, h2, h3, h4, a {font-family: 'Inter', sans-serif; font-weight: 500; color: #000000; text-transform: lowercase; padding-left: 10px;}
+
+h1 {color: #FFE4B8;}
+
+h2 {color: #FFE4B8;}
 
 h3 {color: #000000; font-size: 15px; margin-bottom: 5px;}
 
@@ -21,32 +28,61 @@ hr {width: 250px; height: 3px; background: #701411; border: 0px; margin: 0px aut
 .form__label {margin-right: 20px;}
 
 .form__select {padding: 4px 2px;}
+
 /* HEADER ******************************/
 
 header {
 width: 100%;
 height: 75px;
-position: fixed;
+/*position: fixed;**/
 top: 0;
 left: 0;
 background: #fff;
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+/*box-shadow: 0 0 10px #FFE4B8;/*rgba(0, 0, 0, 0.1);**/
 z-index: 1;}
 
 
-#logo {width: 100px; float: left; margin: 10px 0 0 10px}
+#logo {width: 100px; float: left; margin: 0 10px 0 10px}
 
 #logo:hover {opacity: 0.5;}
 
-.img-logo {width: 60px;}
+.img-logo {width: 70px;}
 
+#main-nav {background-color: #4C241D}
+header {margin-top: -40px;}
 
-/* START ******************************/
+header {background-color: #885244}
+
+header nav {float: right; margin: -13px 50px 0 0;}
+
+header nav ul li {float: center; margin-left: -15px; margin-right: 30px; margin-top: -10px; padding-bottom: 10px;}
+
+header nav ul li a {font-size: 16px;}
+
+header nav ul li:hover {padding-top: 5px; transition: all 300ms;}
+
+#title {font-size: 30px; margin: 10px;}
+
+/* BODY ******************************/
 
 #start hr {width: 1000px; height: 3px; background: #000000}
 
-#start h1 {font-size: 30px;}
+#start h1 {color: #000; font-size: 30px; float: center;}
 
-#start h2 {font-size: 15px;}
+#start h2 {color: #000; font-size: 20px;}
 
-#start {background: #ffeed2; background-size: cover;}
+#start {background: #fff; background-size: auto;}
+
+#mypets h1 {color: #000; font-size: 30px; float: center;}
+
+#mypets h2 {color: #000; font-size: 20px;}
+
+#about h1 {color: #000; font-size: 30px; float: center;}
+
+#about h2 {color: #000; font-size: 20px;}
+
+#savedpets h1 {color: #000; font-size: 30px; float: center;}
+
+#savedpets h2 {color: #000; font-size: 20px;}
+
+#information h3 {font-size: 15px;}

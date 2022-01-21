@@ -5,15 +5,26 @@
     <title>mypaw</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <h1>Hello {{ name }}!</h1>
-    <a href="{{ url_for('mypets')}}">Link zu mypets</a>
+    <!-- <h1>Hello {{ name }}!</h1> -->
 
-<! –– test is linked to def test (def name) in py file & nicht dass in der app.route
+
+<!-- test is linked to def test (def name) in py file & nicht das in der app.route
     test ist der name der funktion
-    these two are linked ––>
+    these two are linked -->
 
 <!-- HEADER ------------------------------->
 
@@ -24,24 +35,31 @@
             </a>
          </div>
 <!-- keep this code in mind for inserting/showing pictures ---->
-
+<div id="title">
     <h1>mypaw</h1>
+</div>
 
+    <nav id="main-nav">
+    <ul>
+        <li><a href="/"><h2>Home</h2></a></li>
+        <li><a href="/mypets"><h2>mypets</h2></a></li>
+        <li><a href="/savedpets"><h2>savedpets</h2></a></li>
+        <li><a href="/about"><h2>About</h2></a></li>
+        </ul>
+    </nav>
 </header>
 
 <!-- Start ---->
 <section id="start" >
-    <h1>Hello {{ name }}!</h1>
+    <h1>Hello {{ name }}, keep track of your beloved pets with mypaw! </h1>
 
-<h1> {{ name }}, keep track of your beloved pets! <h1>
     <h2>when owning or fostering pets it might be difficult to keep track of all their differences.
-        with mypaw, you are able to keep record of your pets needs such as medication, food preferences,
+        with mypaw, you are able to keep record of your pets information and needs such as name, age, medication or food preferences!
+
     </h2>
 
-
-
-
 </section>
+
 
 </body>
 </html>

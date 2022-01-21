@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>mypets</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
-    <h1>Welcome to your pets!</h1>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+</head>
+
+    <header>
+    <div id="logo"> <!--#logo -->
+<a href="{{ url_for('logo')}}">
+                <img class='img-logo' src="static/img/paw.png" alt="mypaw">
+            </a>
+         </div>
+<!-- keep this code in mind for inserting/showing pictures ---->
+<div id="title">
+    <h1>mypaw</h1>
+</div>
+    <nav id="main-nav">
+    <ul>
+        <li><a href="/"><h2>Home</h2></a></li>
+        <li><a href="/mypets"><h2>mypets</h2></a></li>
+        <li><a href="/savedpets"><h2>savedpets</h2></a></li>
+        <li><a href="/about"><h2>About</h2></a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+<section id="mypets" >
+    <h1>Welcome, here you can register any new pets!</h1>
 
     <h2>please enter the following information about your pet:</h2>
-<form>
+<form id="information">
 
     <div class="form__fieldset">
         <label for="animal" class="form__label"> <h3>Animal:</h3></label>
@@ -61,8 +96,7 @@
 
 </form>
 
-</head>
-<body>
+</section>
 
 </body>
 </html>

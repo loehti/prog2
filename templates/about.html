@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>savedpets</title>
+    <title>about</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
 </head>
 
-<header>
+    <header>
     <div id="logo"> <!--#logo -->
 <a href="{{ url_for('logo')}}">
                 <img class='img-logo' src="static/img/paw.png" alt="mypaw">
@@ -37,22 +37,14 @@
     </nav>
 </header>
 
-<section id="savedpets">
+<section id="about">
+<h1>About mypaw</h1>
 
-    <h1>These are your saved pets!</h1>
+    <h2>When looking after multiple animals, it can be difficult to keep track of all their needs. With mypaw, this gets easier! You can register different
+    types of animals and collect all the information necessary: name, age, medication, special needs etc.! You can even save the status of your animal,
+    meaning if it is your personal pet, a foster animal or if you're just the pet sitter.</h2>
 
-    <h2>This is supposed to show the saved pets like this:</h2>
-
-<!--<div id="example">
- <a href="{{url_for('example')}}">
-    <img class="img-example"src="static/img/example.png"alt="example">
- </a>
-    </div>-->
-
-    <!-- ^ diesen code (als comment) löschen, damit die website lädt ---->
-
-
-</section>
+    </section>
 <body>
 
 </body>
