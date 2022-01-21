@@ -1,5 +1,5 @@
 # prog2 mypaw
-
+This project is part of my studies but unfortunately doesn't work as I intended to.
 
 # What this project does
 
